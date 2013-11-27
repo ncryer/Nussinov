@@ -1,0 +1,30 @@
+This class implements Nussinov's algorithm
+    to predict RNA secondary structure from a
+    RNA sequence alone. 
+    
+    It contains the following methods:
+    
+    returnVienna(seq,pairs):
+    Return the Vienna encoding of a prediction made by
+    the Nussinov algorithm
+    Input: sequence used for prediction, list of predicted basepairs
+    Output: A Vienna encoded string e.g. "..(.)..((..))"
+    
+    read_fasta("file.fasta"):
+    Read a fasta file and store the sequence(s) in a dictionary
+    of the form seqDict["seqName"] = "aauu..." 
+
+    
+    score_function(x,y):
+    A base-pairing score function which positively weights
+    Watson-Crick base pairs. Can be modified to accomodate 
+    wobble base pairs, etc. 
+    
+    predict(seq):
+    Fills out the score matrix in O(N^3) time and O(N^2) space
+    Backtracks through the matrix in O(N) time 
+    and outputs a prediction in Vienna format
+    
+    MatthewsCC(pred,true):
+    Calculate and output the Matthews correlation coefficient
+    for a prediction given its true/known structure
