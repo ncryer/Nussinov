@@ -22,6 +22,11 @@ class Nussinov_multiple:
     MI(x,y):
     calculate the mutual information between positions x and y
     
+    TODO: Add comments to reflect content of class
+    IMPORTANT: Prediction currently happens by taking a random sequence
+    also score function doesn't check if characters are base-pairable
+    So the predictions are incorrect
+    
     
     """
     def __init__(self):
