@@ -40,16 +40,8 @@ class Nussinov:
     for a prediction given its true/known structure
     """
     
-    def __init__(self,filename):
-        self.filename = filename
-        
-        """
-        Sequences are stored in a dictionary
-        such that dict[name] = sequence
-        """
-        self.seqs = self.read_fasta(self.filename)
-        
-        #self.prediction = self.predict()
+    def __init__(self):
+        return None
     
     def returnVienna(self,seq,pairs):
         """

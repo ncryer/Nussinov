@@ -17,7 +17,8 @@ This class implements Nussinov's algorithm
     
     score_function(x,y):
     A base-pairing score function which positively weights
-    Watson-Crick base pairs and "wobble" base pairs
+    Watson-Crick base pairs. Can be modified to accomodate 
+    wobble base pairs, etc. 
     
     predict(seq):
     Fills out the score matrix in O(N^3) time and O(N^2) space

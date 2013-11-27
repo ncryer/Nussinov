@@ -1,0 +1,56 @@
+
+This directory contains the following files:
+
+Notes.txt
+
+	This file.
+
+testseqs.fasta
+
+	24 unaligned RNA sequences.
+
+testseqs_aligned.fasta
+
+	The alignment of the 24 RNA sequences in testseqs.fasta.
+
+testseqs_nussinov_single_pred.dbn
+
+	The 2nd structure in Vienna format for each of the 24
+	sequences in testseqs.fasta as predicted by'nussinov_single'.
+
+testseqs_nussinov_multiple_pred.dbn
+
+	The 2nd structure in Vienna format for each of the 24
+	sequences in testseqs.fasta as predicted from the multiple
+	alignment in testseqs_aligned.fasta using 'nussinov_multiple'.
+
+
+testseqs_true_multiple_pred.txt
+
+	The predicted structure for the multiple alignment in 
+	testseqs_aligned.fasta, i.e. before conversion to a structure
+	for each sequences.
+
+testseqs_true_structure_alignment.txt
+
+	The true structure of the multiple alignment in
+	testseqs_aligned.fasta, i.e. before conversion to a structure
+	for each sequences.
+
+testseqs_true_structures.dbn
+
+	The true structure for each of the 24 sequences in
+	testseqs.fasta constructed by converting
+	testseqs_true_structure_alignment.txt into a structure for
+	each of the sequences.
+
+test_mcc.txt
+
+	The Matthews Correlation Coefficient (MCC) between the
+	predicted structures in testseqs_nussinov_single_pred.dbn,
+	testseqs_nussinov_multiple_pred.dbn and the true structures in
+	testseqs_true_structures.dbn.
+
+
+
+
